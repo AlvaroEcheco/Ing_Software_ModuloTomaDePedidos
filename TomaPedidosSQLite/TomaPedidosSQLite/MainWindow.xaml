@@ -1,0 +1,41 @@
+﻿<Window x:Class="TomaPedidosSQLite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TomaPedidosSQLite"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="522" Width="807">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Registrar pedido" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Número de mesa:" HorizontalAlignment="Left" Height="33" Margin="190,57,0,0" VerticalAlignment="Top" Width="155"/>
+                    <ComboBox x:Name="cmbMesas" HorizontalAlignment="Left" Margin="374,57,0,0" VerticalAlignment="Top" Width="170" BorderBrush="Black"/>
+                    <Label Content="Mesero:" HorizontalAlignment="Left" Margin="268,108,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbMeseros" HorizontalAlignment="Left" Margin="374,110,0,0" VerticalAlignment="Top" Width="170"/>
+                    <Button x:Name="btnTomarOrden" Content="Tomar órdenes" HorizontalAlignment="Left" Margin="60,176,0,0" VerticalAlignment="Top" Width="135" Height="42"/>
+                    <ListBox HorizontalAlignment="Left" Height="151" Margin="228,176,0,0" VerticalAlignment="Top" Width="393" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="209,395,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Mesas" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pedidos abiertos" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Historial" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="TomaPedidosSQLite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TomaPedidosSQLite"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="522" Width="807">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Registrar pedido" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Número de mesa:" HorizontalAlignment="Left" Height="33" Margin="190,57,0,0" VerticalAlignment="Top" Width="155"/>
+                    <ComboBox x:Name="cmbMesas" HorizontalAlignment="Left" Margin="374,57,0,0" VerticalAlignment="Top" Width="170" BorderBrush="Black"/>
+                    <Label Content="Mesero:" HorizontalAlignment="Left" Margin="268,108,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbMeseros" HorizontalAlignment="Left" Margin="374,110,0,0" VerticalAlignment="Top" Width="170"/>
+                    <Button x:Name="btnTomarOrden" Content="Tomar órdenes" HorizontalAlignment="Left" Margin="60,176,0,0" VerticalAlignment="Top" Width="135" Height="42"/>
+                    <ListBox HorizontalAlignment="Left" Height="151" Margin="228,176,0,0" VerticalAlignment="Top" Width="393" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="209,395,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Mesas" FontSize="18">
+                <Grid Background="#FFFF902B">
+                    <Button x:Name="btn1" Content="MESA 1" HorizontalAlignment="Left" Margin="77,52,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"/>
+                    <Button x:Name="btn2" Content="MESA 2" HorizontalAlignment="Left" Margin="295,52,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"  />
+                    <Button x:Name="btn3" Content="MESA 3" HorizontalAlignment="Left" Margin="501,52,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"  />
+                    <Button x:Name="btn4" Content="MESA 4" HorizontalAlignment="Left" Margin="77,179,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click" />
+                    <Button x:Name="btn7" Content="MESA 7" HorizontalAlignment="Left" Margin="77,326,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click" />
+                    <Button x:Name="btn5" Content="MESA 5" HorizontalAlignment="Left" Margin="295,179,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"/>
+                    <Button x:Name="btn8" Content="MESA 8" HorizontalAlignment="Left" Margin="295,326,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"  />
+                    <Button x:Name="btn6" Content="MESA 6" HorizontalAlignment="Left" Margin="501,179,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click"/>
+                    <Button x:Name="btn9" Content="MESA 9" HorizontalAlignment="Left" Margin="501,326,0,0" VerticalAlignment="Top" Height="69" Width="139" Click="Button_Click" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pedidos abiertos" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Historial" FontSize="18">
+                <Grid >
+                    <ListView x:Name="lstView" Background="#FFFF902B">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Nº Pedido" DisplayMemberBinding="{Binding NumeroPedido}" Width="100"/>
+                                <GridViewColumn Header="Razón Social" DisplayMemberBinding="{Binding RazonSocial}" Width="150"/>
+                                <GridViewColumn Header="CI" DisplayMemberBinding="{Binding Ci}" Width="100"/>
+                                <GridViewColumn Header="Estado" DisplayMemberBinding="{Binding Estado}" Width="100"/>
+                                <GridViewColumn Header="Total" DisplayMemberBinding="{Binding Total}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

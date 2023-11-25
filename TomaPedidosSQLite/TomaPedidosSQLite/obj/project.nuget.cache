@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "MxQ63cWKpK/b01Wm4Fr3KXgeFhg0sJnrYmtDCtSC44+eMYm1qRqQl9fUt/lFlaK+7TjxU5Qpfj3R7+Rc/BvFLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC 1\\source\\repos\\Ing_Software_ModuloTomaDePedidos\\TomaPedidosSQLite\\TomaPedidosSQLite\\TomaPedidosSQLite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC 1\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\PC 1\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\PC 1\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\PC 1\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\PC 1\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\PC 1\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
